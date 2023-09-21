@@ -1,4 +1,4 @@
-import telebot
+import Telebot
 
 key = "6489296743:AAHNHhQirARtbb7HIHE6WQAeF_Prp5gsUtk"
 
@@ -17,4 +17,6 @@ def text(message):
 
 if __name__ == "__main__":
     print('start bot')
-    bot.infinity_polling()
+    bot.remove_webhook()
+    bot.set_webhook(url='https://netbot.cyclic.app/' + key)
+    bot.polling(none_stop=True)
