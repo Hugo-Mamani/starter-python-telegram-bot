@@ -18,4 +18,7 @@ def text(message):
 
 if __name__ == "__main__":
     print('start bot')
-    bot.polling(none_stop=True)
+    try:
+        bot.polling(none_stop=True)
+    except Exception as e:
+        print(f"Error: {str(e)}")
