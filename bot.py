@@ -1,4 +1,4 @@
-import Telebot
+import telebot
 
 key = "6489296743:AAHNHhQirARtbb7HIHE6WQAeF_Prp5gsUtk"
 
