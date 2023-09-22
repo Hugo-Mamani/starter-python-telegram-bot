@@ -27,7 +27,7 @@ def cmd(message):
         mss = message.text.split()
         if len(mss) > 1:
             args = mss[1:]
-            parser = dict(map((lambda e: e.split('=')), args))
+            parser = dict(map((lambda e: e.split('>')), args))
             if not '' in parser.values() and len(parser.values()) == 2:
                 global process
                 process = multiprocessing.Process(target=subprocess,args=(message.chat,parser['file'],parser['source']))
